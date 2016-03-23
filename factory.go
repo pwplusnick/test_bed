@@ -15,13 +15,13 @@ type Imp1 struct {
      Name string
 }
 
-type Imp2 struct {
-     Alias string
-}
-
 func (i *Imp1) Hi() string {
      i.Name = "Implementation 1"
      return i.Name
+}
+
+type Imp2 struct {
+     Alias string
 }
 
 func (i *Imp2) Hi() string {
